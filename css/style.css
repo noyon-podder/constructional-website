@@ -1,0 +1,134 @@
+/* 
+============================
+*********Table of contents**********
+
+01. Google Fonts 
+02. variables
+03. customize bootstrap class
+04. base
+05. section - padding, title
+06. buttons
+07. header section
+08. hero section
+09. slider section
+10. location section
+11. featured listing section
+12. explore section
+13. plan section
+14. blog section
+15. footer section
+
+============================
+*/
+
+/* 
+***********************
+1. google fonts  
+***********************
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* 
+***********************
+2. Variables  
+***********************
+*/
+
+:root {
+  --white-color: #fff;
+  --title-color: #111;
+  --text-color: #999;
+  --gradient-color: linear-gradient(
+    338deg,
+    rgba(186, 169, 28, 1) 0%,
+    rgba(232, 39, 39, 1) 50%,
+    /* Adjusted position */ rgba(236, 234, 26, 1) 100%
+  );
+  --main-color: #e82727;
+  --title-size: 32px;
+  --text-size: 16px;
+}
+
+/* 
+******************************
+03. customize bootstrap class
+******************************
+*/
+.logo {
+  color: var(--main-color);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* 
+***********************
+04. base
+***********************
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.main-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 
+***********************
+15. footer style 
+***********************
+*/
+
+.footer-title {
+  border-bottom: 1px solid #eee6e6;
+}
+.footer-title h2 {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer-text {
+  font-size: 12px;
+}
+.footer-body {
+  padding: 20px 5px;
+}
+.footer-body ul li {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.phone-number-div {
+  background-color: rgb(233, 240, 240);
+  margin-top: 25px;
+}
+.phone-number-div .phone-icon {
+  font-size: 26px;
+}
+.phone-number-div .phone-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.phone-number-div .phone-no {
+  color: var(--title-color);
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 18px;
+}
