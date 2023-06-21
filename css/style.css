@@ -11,7 +11,7 @@
 07. header section
 08. hero section
 09. slider section
-10. location section
+10. gallery section
 11. featured listing section
 12. explore section
 13. plan section
@@ -84,16 +84,23 @@ li {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+img {
+  width: 100%;
+}
 /* 
 ********************************
-5. Section - margins and padding
+05. Section - margins and padding
 ********************************
 */
-section {
+.section {
   padding: 60px 0;
 }
-
+.section-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .section-heading {
   font-size: 38px;
   font-weight: 700;
@@ -102,7 +109,6 @@ section {
 .section-subheading {
   font-size: 20px;
   color: var(--text-color);
-  margin-top: 15px;
 }
 
 /* 
@@ -178,6 +184,23 @@ section {
   border: 1px solid var(--border-color);
 }
 
+/* 
+***********************
+ 10. Gallery Section
+***********************
+*/
+.image-wrapper {
+  position: relative;
+}
+.image-wrapper p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+}
 /* 
 ***********************
 15. footer style 
