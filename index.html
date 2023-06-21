@@ -70,6 +70,32 @@
                 </li>
                 <li class="nav-item ms-4">
                   <a class="nav-link fw-semibold" href="#" tabindex="-1"
+                    >Help</a
+                  >
+                </li>
+                <li class="nav-item dropdown ms-4">
+                  <a
+                    class="nav-link dropdown-toggle fw-semibold"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Blog 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item"> Blog 3 </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link fw-semibold" href="#" tabindex="-1"
                     >Sign Up</a
                   >
                 </li>
@@ -83,7 +109,38 @@
       <!-- Header part End -->
 
       <!-- main part start  -->
-      <main></main>
+      <main>
+        <!-- hero section start  -->
+        <section class="hero-content">        
+           <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="hero-title">How can we help you today?</h2>
+            <p class="hero-subtitle">Your One-Stop Shop for Local Indian Businesses</p>
+           </div>
+              <div class="hero-form container">
+                <div class="d-flex justify-content-center align-items-center flex-wrap ">
+                  <div class="col-md-6">
+                    <div class="hero-column p-5">
+                      <label for="what" class="d-block label-text">What?</label>
+                    <input type="text" id="what" placeholder="Eg. Construction, rooter, plumber">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="hero-column p-5 d-flex justify-content-between align-items-center flex-wrap">
+                     <div class="place">
+                      <label for="where" class="d-block label-text">Where?</label>
+                      <input type="text" id="where" placeholder="Eg. Chennai, Bangalore">
+                     </div>
+                     <div class="button">
+                      <a href="#" class="main-button">Search <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       
+        </section>
+        <!-- hero section end -->
+      </main>
       <!-- main part end -->
 
       <!-- footer part start  -->
