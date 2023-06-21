@@ -38,15 +38,10 @@
 :root {
   --white-color: #fff;
   --title-color: #484848;
+  --sub-color: #ef8329;
   --text-color: #989898;
   --border-color: #eee6e6;
-  --gradient-color: linear-gradient(
-    338deg,
-    rgba(186, 169, 28, 1) 0%,
-    rgba(232, 39, 39, 1) 50%,
-    /* Adjusted position */ rgba(236, 234, 26, 1) 100%
-  );
-  --main-color: #e82727;
+  --main-color: #db1d45;
   --title-size: 32px;
   --text-size: 16px;
 }
@@ -87,13 +82,23 @@ li {
 img {
   width: 100%;
 }
+.circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e1e1e1;
+}
+.vector {
+  width: 20px;
+  height: 20px;
+}
 /* 
 ********************************
 05. Section - margins and padding
 ********************************
 */
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 .section-heading-wrapper {
   display: flex;
@@ -119,7 +124,7 @@ img {
 .main-button {
   display: inline-block;
   padding: 15px 30px;
-  background: linear-gradient(180deg, #db1d45 0%, #f5a121 100%);
+  background: linear-gradient(180deg, var(--main-color) 0%, #f5a121 100%);
   border-radius: 6px;
   color: var(--white-color);
   transition: all 0.3s ease;
@@ -128,8 +133,23 @@ img {
 }
 .main-button:hover {
   background: transparent;
-  border: 1px solid #db1d45;
-  color: #db1d45;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.card-button {
+  color: var(--sub-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card-button:hover {
+  color: var(--main-color);
+}
+.close-button {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.close-button:hover {
+  color: var(--sub-color);
 }
 /* 
 ***********************
@@ -189,6 +209,9 @@ img {
  10. Gallery Section
 ***********************
 */
+.gallery {
+  margin-top: 40px;
+}
 .image-wrapper {
   position: relative;
 }
@@ -200,6 +223,36 @@ img {
   color: var(--white-color);
   font-size: 20px;
   font-weight: 600;
+}
+/* 
+***********************
+11. Features section
+***********************
+*/
+.rating {
+  padding: 2px 8px;
+  background: var(--sub-color);
+  color: var(--white-color);
+}
+
+.rating-down {
+  padding: 2px 8px;
+  background: #ffba00;
+  color: var(--white-color);
+}
+.featured-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.featured-location {
+  color: #4e4e4e;
+  font-size: 18px;
+  font-weight: 400;
+}
+.featured-content {
+  margin-top: 40px;
+  color: #4e4e4e;
 }
 /* 
 ***********************
