@@ -1,0 +1,153 @@
+/* 
+========================
+tablet device
+========================
+*/
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 30px;
+  }
+
+  .section-subheading {
+    font-size: 16px;
+  }
+}
+
+/* 
+========================
+media queries  
+========================
+*/
+@media only screen and (max-width: 525px) {
+  .main-wrapper {
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .section-subheading {
+    font-size: 14px;
+  }
+
+  .section-top-heading {
+    margin: 20px 0 10px 0;
+  }
+
+  .marginY {
+    margin: 20px 0;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  /* button  */
+  .main-button {
+    margin-top: 10px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  /* hero section  */
+  .hero-content .hero-title {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+
+  .hero-form {
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  .hero-content .hero-subtitle {
+    margin-bottom: -10px;
+  }
+
+  .hero-form .hero-column input {
+    width: 100%;
+  }
+
+  .hero-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* explore image padding  */
+  .explore-image {
+    padding: 0 10px;
+  }
+
+  .explore-feature {
+    left: 20px;
+  }
+
+  .status {
+    right: 20px;
+  }
+
+  .explore {
+    padding-bottom: 10px;
+  }
+
+  /* gallery section  */
+  .gallery {
+    margin-top: 20px;
+  }
+
+  .gallery-section {
+    margin-top: 20px;
+  }
+
+  /* plan section  */
+  .plan {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .plan-data {
+    margin-top: 160px;
+    text-align: center;
+  }
+
+  /* featured section  */
+  .featured-sector {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .rating-text {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .featured-content {
+    margin-top: 10px;
+  }
+
+  /* blog section  */
+  .blog-title {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
+  /* footer section  */
+  footer {
+    margin-top: 10px;
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+  }
+
+  .bottom-footer-text {
+    width: 100%;
+    text-align: center;
+  }
+}

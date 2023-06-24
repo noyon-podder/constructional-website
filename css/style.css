@@ -78,8 +78,7 @@ li {
 }
 
 .main-wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
+  overflow: hidden;
 }
 
 img {
@@ -138,14 +137,16 @@ img {
 ***********************
 */
 .main-button {
-  display: inline-block;
-  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
   background: linear-gradient(180deg, var(--main-color) 0%, #f5a121 100%);
   border-radius: 6px;
   color: var(--white-color);
   transition: all 0.3s ease-in-out;
   font-size: 18px;
   font-weight: 400;
+  border: 1px solid #f5a121;
 }
 
 .main-button:hover {
@@ -219,10 +220,7 @@ img {
 }
 
 .logo {
-  color: var(--main-color);
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
+  width: 200px;
   cursor: pointer;
 }
 
@@ -249,7 +247,8 @@ img {
 }
 
 .hero-form {
-  margin-top: 40px;
+  padding: 0 100px;
+  margin-top: 30px;
 }
 
 .label-text {
@@ -305,13 +304,12 @@ img {
 .scroll-container {
   overflow-x: auto;
   white-space: nowrap;
-  padding: 10px;
+  padding: 10px 0;
   position: relative;
   margin: 0 auto;
 }
 
 .scroll-container img {
-  padding: 10px;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
@@ -336,6 +334,10 @@ img {
 */
 .gallery {
   margin-top: 40px;
+}
+
+.gallery-section {
+  margin-top: 20px;
 }
 
 .image-wrapper {
@@ -394,7 +396,7 @@ img {
 .explore {
   background: #f9f9f9;
 
-  padding-bottom: 200px;
+  padding-bottom: 230px;
 }
 
 .explore-content {
@@ -498,8 +500,10 @@ img {
 ***********************
 */
 .plan {
-  margin-top: -150px;
+  margin-top: -140px;
+  border: 3px solid #f9f9f9;
 }
+
 .plan-wrapper {
   background-color: #f3f3f3;
   padding: 15px 20px;
@@ -529,6 +533,11 @@ img {
 14. Blog Section
 ***********************
 */
+.blog {
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+
 .blog-content {
   margin-top: 30px;
 }
@@ -559,6 +568,10 @@ img {
   margin-top: -5px;
 }
 
+.blog-body {
+  padding: 15px 0;
+}
+
 .blog-title {
   font-size: 24px;
   font-weight: 500;
@@ -578,8 +591,13 @@ img {
 ***********************
 */
 
-.logo.footer-logo {
-  font-size: 26px;
+footer {
+  border-top: 4px solid #f9f9f9;
+  padding-top: 40px;
+}
+
+.footer-logo {
+  width: 180px;
 }
 
 .mobile-app img {
@@ -657,113 +675,4 @@ img {
   font-size: 20px;
   cursor: pointer;
   color: #868686;
-}
-
-/* 
-========================
-media queries  
-========================
-*/
-@media only screen and (max-width: 525px) {
-  .main-wrapper {
-    overflow: hidden;
-  }
-
-  .container {
-    padding: 0 15px;
-  }
-
-  .section-heading {
-    font-size: 30px;
-  }
-
-  .section-subheading {
-    font-size: 16px;
-  }
-
-  .section-top-heading {
-    margin: 20px 0 10px 0;
-  }
-
-  .marginY {
-    margin: 20px 0;
-  }
-
-  /* button  */
-  .main-button {
-    display: block;
-    margin-top: 10px;
-
-    display: inline-block;
-    padding: 10px 25px;
-    background: linear-gradient(180deg, var(--main-color) 0%, #f5a121 100%);
-    border-radius: 6px;
-    color: var(--white-color);
-    transition: all 0.3s ease;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  /* hero section  */
-  .hero-content .hero-title {
-    font-size: 50px;
-    padding-top: 10px;
-  }
-
-  .hero-content .hero-subtitle {
-    margin-bottom: -10px;
-  }
-
-  .hero-form .hero-column input {
-    width: 100%;
-  }
-
-  .hero-wrapper {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  /* blog section  */
-  .blog-title {
-    margin-top: 16px;
-  }
-
-  /* footer section  */
-  footer {
-    margin-top: 10px;
-  }
-
-  .bottom-footer {
-    flex-direction: column;
-  }
-
-  .bottom-footer-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* explore image padding  */
-  .explore-image {
-    padding: 0 10px;
-  }
-
-  .explore-feature {
-    left: 20px;
-  }
-
-  .status {
-    right: 20px;
-  }
-  .explore {
-    padding-bottom: 30px;
-  }
-  .plan {
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  .featured-sector {
-    font-size: 14px;
-    font-weight: 500;
-  }
 }
