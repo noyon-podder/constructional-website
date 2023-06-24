@@ -10,7 +10,7 @@
 06. buttons
 07. header section
 08. hero section
-09. slider section
+09. category section
 10. gallery section
 11. featured listing section
 12. explore section
@@ -63,13 +63,16 @@
   /* font-family: "Poppins", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
@@ -78,19 +81,23 @@ li {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 img {
   width: 100%;
 }
+
 .circle {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #e1e1e1;
 }
+
 .vector {
   width: 20px;
   height: 20px;
 }
+
 /* 
 ********************************
 05. Section - margins and padding
@@ -99,23 +106,27 @@ img {
 .section {
   padding: 40px 0;
 }
+
 .section-heading-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .section-top-heading {
   color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
+
 .section-heading {
   font-size: 38px;
   font-weight: 700;
   color: var(--title-color);
 }
+
 .section-subheading {
   font-size: 20px;
   color: var(--text-color);
@@ -132,30 +143,36 @@ img {
   background: linear-gradient(180deg, var(--main-color) 0%, #f5a121 100%);
   border-radius: 6px;
   color: var(--white-color);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   font-size: 18px;
   font-weight: 400;
 }
+
 .main-button:hover {
   background: transparent;
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
+
 .card-button {
   color: var(--sub-color);
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .card-button:hover {
   color: var(--main-color);
 }
+
 .close-button {
   color: var(--main-color);
   text-transform: uppercase;
 }
+
 .close-button:hover {
   color: var(--sub-color);
 }
+
 .blog-button {
   display: inline-block;
   padding: 4px 15px;
@@ -166,21 +183,51 @@ img {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .blog-button:hover {
   color: var(--white-color);
   background-color: var(--sub-color);
 }
+
 /* 
 ***********************
 7. Header sections
 ***********************
 */
+.nav-button-icon {
+  font: 300;
+  color: var(--main-color);
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.nav-button:hover .nav-button-icon {
+  color: var(--white-color);
+}
 
 .logo {
   color: var(--main-color);
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--main-color);
 }
 
 /* 
@@ -193,26 +240,32 @@ img {
   color: var(--title-color);
   font-weight: 700;
 }
+
 .hero-content .hero-subtitle {
   font-size: 24px;
   font-weight: 300;
   color: var(--text-color);
   margin-top: 10px;
 }
+
 .hero-form {
   margin-top: 40px;
 }
+
 .label-text {
   font-size: 19px;
   font-weight: 600;
   color: var(--title-color);
 }
+
 .hero-wrapper {
   width: 50%;
 }
+
 .hero-column .place {
   width: 70%;
 }
+
 .hero-form .hero-column input {
   width: 80%;
   display: block;
@@ -222,8 +275,58 @@ img {
   border: none;
   outline: none;
 }
+
 .hero-column {
   border: 1px solid var(--border-color);
+}
+
+/* 
+***********************
+09. category section
+***********************
+*/
+.category {
+  background: linear-gradient(180deg, var(--main-color) 0%, #f5a121 100%);
+  color: var(--white-color);
+}
+
+.category .section-top-heading {
+  color: var(--white-color);
+}
+
+.category .section-heading {
+  color: var(--white-color);
+}
+
+.category .section-subheading {
+  color: var(--white-color);
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.scroll-container img {
+  padding: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 245px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  max-width: 10px;
+  background-color: white;
+  height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #552929;
+  border-radius: 7px;
 }
 
 /* 
@@ -234,9 +337,11 @@ img {
 .gallery {
   margin-top: 40px;
 }
+
 .image-wrapper {
   position: relative;
 }
+
 .image-wrapper p {
   position: absolute;
   top: 50%;
@@ -246,6 +351,7 @@ img {
   font-size: 20px;
   font-weight: 600;
 }
+
 /* 
 ***********************
 11. Features section
@@ -262,20 +368,24 @@ img {
   background: #ffba00;
   color: var(--white-color);
 }
+
 .featured-title {
   font-size: 22px;
   font-weight: 700;
   color: var(--title-color);
 }
+
 .featured-location {
   color: #4e4e4e;
   font-size: 18px;
   font-weight: 400;
 }
+
 .featured-content {
   margin-top: 40px;
   color: #4e4e4e;
 }
+
 /* 
 ***********************
 12. Explore Section
@@ -283,19 +393,26 @@ img {
 */
 .explore {
   background: #f9f9f9;
+
+  padding-bottom: 200px;
 }
+
 .explore-content {
   margin-top: 30px;
 }
+
 .explore-image {
   position: relative;
 }
+
 .circle.close {
   background-color: var(--main-color);
 }
+
 .circle.open {
   background-color: #04be30;
 }
+
 .explore-feature {
   background-color: var(--sub-color);
   padding: 3px 8px;
@@ -307,6 +424,7 @@ img {
   top: 10px;
   left: 10px;
 }
+
 .status {
   background-color: var(--white-color);
   padding: 3px 8px;
@@ -327,60 +445,74 @@ img {
   right: 30px;
   bottom: -20px;
 }
+
 .shopping-bag {
   width: 34px;
   height: 34px;
   margin-top: -15px;
 }
+
 .check-mark {
   width: 15px;
   height: 15px;
   margin-top: -10px;
 }
+
 .explore-title {
   font-size: 18px;
   font-weight: 700;
 }
+
 .star-icon {
   width: 14px;
   height: 14px;
 }
+
 .rating-numebr {
   margin-top: 10px;
   margin-right: 10px;
   font-size: 16px;
   font-weight: 400;
 }
+
 .explore-text {
   font-size: 14px;
   font-weight: 400;
   color: #777;
 }
+
 .explore-location {
   color: #777;
   font-size: 13px;
   font-weight: 400;
 }
+
 .explore-body {
   background-color: var(--white-color);
   padding: 10px 25px;
 }
+
 /* 
 ***********************
 13. plan section
 ***********************
 */
+.plan {
+  margin-top: -150px;
+}
 .plan-wrapper {
   background-color: #f3f3f3;
   padding: 15px 20px;
   border-radius: 5px;
 }
+
 .plan-wrapper h3 {
   font-size: 20px;
   font-weight: 700;
   color: var(--title-color);
   margin-top: 20px;
 }
+
 .plan-wrapper p {
   font-size: 16px;
   font-weight: 300;
@@ -391,6 +523,7 @@ img {
 .plan-icon {
   width: 70px;
 }
+
 /* 
 ***********************
 14. Blog Section
@@ -399,9 +532,11 @@ img {
 .blog-content {
   margin-top: 30px;
 }
+
 .blog-image {
   position: relative;
 }
+
 .blog-date {
   background: var(--sub-color);
   width: 64px;
@@ -417,6 +552,7 @@ img {
   left: 10px;
   bottom: 10px;
 }
+
 .blog-date span {
   font-size: 24px;
   font-weight: 700;
@@ -431,72 +567,128 @@ img {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .blog-title:hover {
   color: var(--main-color);
 }
+
 /* 
 ***********************
 15. footer style 
 ***********************
 */
 
+.logo.footer-logo {
+  font-size: 26px;
+}
+
+.mobile-app img {
+  max-width: 124px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 .footer-title {
   border-bottom: 1px solid var(--border-color);
 }
+
 .footer-title h2 {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
 }
+
 .footer-text {
   font-size: 12px;
 }
+
 .footer-body {
   padding: 20px 5px;
 }
+
 .footer-body ul li {
   margin-bottom: 10px;
   font-weight: 400;
 }
 
 .phone-number-div {
-  background-color: rgb(233, 240, 240);
+  background-color: #f9f9f9;
   margin-top: 25px;
 }
+
 .phone-number-div .phone-icon {
   font-size: 26px;
 }
+
 .phone-number-div .phone-title {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
+  color: #999999;
 }
 
 .phone-number-div .phone-no {
-  color: var(--title-color);
+  color: #222;
   font-weight: 600;
   margin-top: 10px;
   font-size: 18px;
 }
 
-/* media queries  */
-@media only screen and (max-width: 425px) {
+.bottom-footer-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+}
+
+.social-icons span {
+  width: 39px;
+  display: inline-block;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  background-color: #efefef;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.social-icons span i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #868686;
+}
+
+/* 
+========================
+media queries  
+========================
+*/
+@media only screen and (max-width: 525px) {
+  .main-wrapper {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 15px;
   }
+
   .section-heading {
     font-size: 30px;
   }
+
   .section-subheading {
     font-size: 16px;
   }
+
   .section-top-heading {
     margin: 20px 0 10px 0;
   }
+
   .marginY {
     margin: 20px 0;
   }
+
   /* button  */
   .main-button {
     display: block;
@@ -511,19 +703,67 @@ img {
     font-size: 18px;
     font-weight: 400;
   }
+
   /* hero section  */
   .hero-content .hero-title {
     font-size: 50px;
     padding-top: 10px;
   }
+
   .hero-content .hero-subtitle {
     margin-bottom: -10px;
   }
+
   .hero-form .hero-column input {
     width: 100%;
   }
+
   .hero-wrapper {
     width: 100%;
     margin-top: 10px;
+  }
+
+  /* blog section  */
+  .blog-title {
+    margin-top: 16px;
+  }
+
+  /* footer section  */
+  footer {
+    margin-top: 10px;
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+  }
+
+  .bottom-footer-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* explore image padding  */
+  .explore-image {
+    padding: 0 10px;
+  }
+
+  .explore-feature {
+    left: 20px;
+  }
+
+  .status {
+    right: 20px;
+  }
+  .explore {
+    padding-bottom: 30px;
+  }
+  .plan {
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .featured-sector {
+    font-size: 14px;
+    font-weight: 500;
   }
 }
