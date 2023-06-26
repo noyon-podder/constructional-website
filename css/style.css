@@ -464,7 +464,12 @@ img {
   font-size: 18px;
   font-weight: 700;
 }
-
+.check-mark {
+  margin-left: 10px;
+}
+.bookmark {
+  margin-left: 16px;
+}
 .star-icon {
   width: 14px;
   height: 14px;
